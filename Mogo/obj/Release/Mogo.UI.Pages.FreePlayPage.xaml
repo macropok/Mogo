@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Mogo.FreePlayPage"
+	BackgroundColor="#5CA0CB">
+	<StackLayout
+		Orientation="Vertical"
+		VerticalOptions="Start"
+		Spacing="0">
+		<StackLayout
+			Orientation="Vertical"
+			VerticalOptions="FillAndExpand"
+			>
+			<ListView x:Name="freePlayesListView"
+						  ItemsSource="{Binding FreePlaysList}"
+
+				          BackgroundColor="#3a3932"
+				          VerticalOptions="FillAndExpand"
+				          RowHeight="40"
+		              		>
+		      <ListView.ItemTemplate>
+		        <DataTemplate>
+		          <ViewCell>
+		          	<StackLayout
+						Orientation="Horizontal"
+						Spacing="0"
+						>
+						<Image
+							WidthRequest="50"
+							HeightRequest="45"
+							Aspect="AspectFill"
+							Source="{Binding Avatar}"
+							/>
+						<StackLayout
+							Orientation="Vertical"
+							Padding="0,0"
+							Spacing="0"
+							HorizontalOptions="FillAndExpand">
+							<BoxView
+								HeightRequest="5"/>
+							<StackLayout
+								Padding="5,0">
+								<Label
+									Text="{Binding Name}"
+									TextColor="White"
+									FontSize="15"
+									VerticalOptions="FillAndExpand"
+									YAlign="Center"
+								/>
+							</StackLayout>
+							<StackLayout
+								Padding="5,0">
+								<Label
+									Text="{Binding Content}"
+									TextColor="#939284"
+									FontSize="10"
+									VerticalOptions="FillAndExpand"
+									YAlign="Center"
+								/>
+							</StackLayout>
+							<StackLayout
+								HeightRequest="5"
+								Orientation="Horizontal"
+								VerticalOptions="FillAndExpand"
+								BackgroundColor="White"
+								>
+								<BoxView
+									BackgroundColor="#5CA0CB"
+									WidthRequest="{Binding Value}"
+									/>
+							</StackLayout>
+
+						</StackLayout>
+					</StackLayout>
+		          </ViewCell>
+		        </DataTemplate>
+		      </ListView.ItemTemplate>
+		    </ListView>
+	    </StackLayout>
+	    <BoxView
+	    	BackgroundColor="#5CA0CB"
+	    	VerticalOptions="FillAndExpand"
+	    	/>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Mogo.FavoritesPage"
+	BackgroundColor="#5CA0CB">
+	<StackLayout
+		Orientation="Vertical"
+		VerticalOptions="Start"
+		Spacing="0">
+		<StackLayout
+			Orientation="Vertical"
+			VerticalOptions="FillAndExpand"
+			>
+			<ListView x:Name="historyListView"
+						  ItemsSource="{Binding FavoritesList}"
+				          BackgroundColor="#3a3932"
+				          VerticalOptions="FillAndExpand"
+				          RowHeight="40"
+		              		>
+		      <ListView.ItemTemplate>
+		        <DataTemplate>
+		          <ViewCell>
+		          	<StackLayout
+						Orientation="Horizontal"
+						Spacing="7"
+						>
+						<Image
+							WidthRequest="50"
+							HeightRequest="45"
+							Source="{Binding Avatar}"
+							Aspect="AspectFill"
+							/>
+						<StackLayout
+							Orientation="Vertical"
+							Padding="0,5"
+							Spacing="0"
+							HorizontalOptions="FillAndExpand">
+							<Label
+								Text="{Binding Name}"
+								TextColor="White"
+								FontSize="15"
+								VerticalOptions="FillAndExpand"
+								YAlign="Center"
+							/>
+							<Label
+								Text="{Binding Content}"
+								TextColor="#939284"
+								FontSize="10"
+								VerticalOptions="FillAndExpand"
+								YAlign="Center"
+							/>
+						</StackLayout>
+						<Image
+							WidthRequest="20"
+							HeightRequest="20"
+							VerticalOptions="Center"
+							Source="GoldSmallStar"/>
+						<BoxView
+							WidthRequest="10"/>
+					</StackLayout>
+		          </ViewCell>
+		        </DataTemplate>
+		      </ListView.ItemTemplate>
+		    </ListView>
+	    </StackLayout>
+	    <BoxView
+	    	BackgroundColor="#5CA0CB"
+	    	VerticalOptions="FillAndExpand"
+	    	/>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Droid/Mogo.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Xamarin_Android_API_15" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Mogo/UI/Pages/HistoryPage.xaml.cs">
+    <Files>
+      <File FileName="Mogo/Mogo.cs" Line="11" Column="34" />
+      <File FileName="Mogo/UI/Pages/WelcomePage.cs" Line="13" Column="12" />
+      <File FileName="Mogo/UI/Pages/LoggedInRootPage.cs" Line="27" Column="1" />
+      <File FileName="Mogo/UI/Pages/HistoryPage.xaml.cs" Line="20" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/MyData/Work/Xamarin/Mogo/Mogo/UI/Pages/WelcomeContentPage.cs" line="16" column="1" />
+      <Breakpoint file="/MyData/Work/Xamarin/Mogo/Mogo/UI/Pages/LoggedInRootPage.cs" line="25" column="1" />
+      <Breakpoint file="/MyData/Work/Xamarin/Mogo/Mogo/UI/Pages/WelcomePage.cs" line="13" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
